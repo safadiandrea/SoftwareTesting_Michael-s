@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Custom_Framing {
     @Test
-    public static void booking_appointment_typing_in_text_box_with_zip_code() throws InterruptedException {
+    public static void clicking_booking_appointment_button_test1() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
                 "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
@@ -27,9 +27,19 @@ public class Custom_Framing {
         WebElement bookAppointment = driver2.findElement(By.id("appointments"));
         bookAppointment.click();
         Thread.sleep(1000);
+
+
+
+    }
+    @Test
+    public static void making_an_apointment_test2() throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.michaelscustomframing.com/store-finder?lang=en_US");
+        Thread.sleep(3000);
         //Type in the zipcode
 
-        WebElement zip_code = driver2.findElement(By.id("userZip"));
+        WebElement zip_code = driver.findElement(By.id("userZip"));
         zip_code.click();
         int i = 0;
         while (i < 5) {
@@ -41,29 +51,29 @@ public class Custom_Framing {
         zip_code.sendKeys("12345");
         Thread.sleep(3000);
         //Drop down arrow
-        WebElement drop_down = driver2.findElement(By.xpath("//*[@id=\"js-book-appointment_msdd\"]/div[1]/span[2]"));
+        WebElement drop_down = driver.findElement(By.xpath("//*[@id=\"js-book-appointment_msdd\"]/div[1]/span[2]"));
         drop_down.click();
         Thread.sleep(3000);
         //Miles selector
-        WebElement miles_number_fifty = driver2.findElement(By.xpath("//*[@id=\"js-book-appointment_child\"]/ul/li[2]/span"));
+        WebElement miles_number_fifty = driver.findElement(By.xpath("//*[@id=\"js-book-appointment_child\"]/ul/li[2]/span"));
         miles_number_fifty.click();
         Thread.sleep(2000);
         //Zipcode submit
-        WebElement submit = driver2.findElement(By.id("set-zipcode"));
+        WebElement submit = driver.findElement(By.id("set-zipcode"));
         submit.click();
         Thread.sleep(2000);
         //Select location
-        WebElement sch_apt = driver2.findElement(By.xpath("//*[@id=\"main\"]/form/fieldset/div/div[2]/div[2]/div[2]/div[2]/div[1]/label/div/button"));
+        WebElement sch_apt = driver.findElement(By.xpath("//*[@id=\"main\"]/form/fieldset/div/div[2]/div[2]/div[2]/div[2]/div[1]/label/div/button"));
         sch_apt.click();
         Thread.sleep(2000);
         //Scroll
-        JavascriptExecutor scroll = (JavascriptExecutor) driver2;
+        JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("window.scrollBy(0,250)", "");
         Thread.sleep(2000);
 
 
         //Close
-        WebElement close = driver2.findElement(By.xpath("/html/body/div[2]/div[2]/span"));
+        WebElement close = driver.findElement(By.xpath("/html/body/div[2]/div[2]/span"));
         close.click();
         Thread.sleep(2000);
         //Scroll
@@ -72,19 +82,19 @@ public class Custom_Framing {
         Thread.sleep(2000);
         //Selecting date
 
-        WebElement select_30th = driver2.findElement(By.xpath("//*[@id=\"calendar\"]/div[2]/div/table/tbody/tr/td/div/div/div[5]/div[2]/table/thead/tr/td[4]/span"));
+        WebElement select_30th = driver.findElement(By.xpath("//*[@id=\"calendar\"]/div[2]/div/table/tbody/tr/td/div/div/div[5]/div[2]/table/thead/tr/td[4]/span"));
         select_30th.click();
         Thread.sleep(2000);
 
         //add contacts
-        WebElement add_contacts = driver2.findElement(By.xpath("//*[@id=\"main\"]/form/fieldset/button[2]"));
+        WebElement add_contacts = driver.findElement(By.xpath("//*[@id=\"main\"]/form/fieldset/button[2]"));
         add_contacts.click();
         Thread.sleep(2000);
-
-
+        driver.quit();
     }
+
     @Test
-    public static void learnmore() throws InterruptedException {
+    public static void learnmore_test3() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver",
                 "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
@@ -94,7 +104,6 @@ public class Custom_Framing {
         JavascriptExecutor scroll = (JavascriptExecutor) driver2;
 
 
-
         scroll.executeScript("window.scrollBy(0,700)", "");
         Thread.sleep(2000);
         //Learn more
@@ -102,14 +111,17 @@ public class Custom_Framing {
         learn_more.click();
         Thread.sleep(2000);
     }
+
     @Test
 
-    public static void making_jersy_and_add_cart() throws InterruptedException {//Two methods in one
+    public static void making_jersy_test4() throws InterruptedException {//Two methods in one
         //Making a jersey
         System.setProperty("webdriver.chrome.driver",
                 "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.get("https://www.michaelscustomframing.com/");
+        driver2.manage().window().maximize();
+
         JavascriptExecutor scroll = (JavascriptExecutor) driver2;
 
         //Making a jersey
@@ -153,12 +165,21 @@ public class Custom_Framing {
         Thread.sleep(1000);
         scroll.executeScript("window.scrollBy(0,400)", "");
         Thread.sleep(3000);
-        //Add cart
+
+        driver2.quit();
+    }
+
+    @Test
+    public static void add_cart_test5() throws InterruptedException {
+        WebDriver driver2 = new ChromeDriver();
+        driver2.get("https://www.michaelscustomframing.com/frame-your-art/JERSEY2.html?lang=en_US&tbf=true&fiw=0.551&fw=0.846&fsku=9211123&frameSKU=9211123&fromPage=SELECT_FRAME&cin=BAMA%2FbackfoldedV2&toBeFramed=true&imgdpi=72&oin=Uploaded+Image&imageSize=7-7&ioch=700&iocw=695&iocy=0&iocx=0&ich=700&icw=695&icx=0&icy=0&public_id=BAMA%2FbackfoldedV2&productSKU=JERSEY2&startPageID=FRAME_YOUR_MEMORABILIA&optionSelected=Jersey&jerseyType=folded&jerseys=back&optg=CCA&orientation=portrait&matStyle=standard&wi=7&hi=7&matSKU=B8412&categoryid=frames_for_print&mirrorFlag=false&mls=2&mrs=2&mts=2&mbs=2");
+        driver2.manage().window().maximize();
+        JavascriptExecutor scroll = (JavascriptExecutor) driver2;
+        scroll.executeScript("window.scrollBy(0,300)", "");
         WebElement add_cart = driver2.findElement(By.id("add-to-cart"));
         add_cart.click();
         Thread.sleep(5000);
-    }
-    public static void photo_gifts() throws InterruptedException {
-
+        driver2.quit();
     }
 }
+
