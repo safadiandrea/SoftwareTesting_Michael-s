@@ -22,7 +22,6 @@ public class Coupons_Projects {
 
     @BeforeClass
     public void setUp() throws InterruptedException {
-        System.setProperty("webdriver.gecko.driver", "C:/GeckoDriver/geckodriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));

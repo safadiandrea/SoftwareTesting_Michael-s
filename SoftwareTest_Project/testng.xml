@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/safad/IdeaProjects/SoftwareTest_Project">
+        <classes>
+            <class name="Classes_Events">
+               <methods>
+                 <include name="setUp"></include>
+                   <include name="testNavigateToClassesEvents"></include>
+                   <include name="testClickShareIcon"></include>
+                   <include name="testSearchForOnlineClassYarnAndSelect"></include>
+                   <include name="testOpenCalendarAndSelectIntermediateSkill"></include>
+                   <include name="testClickArtExperiencesAndClearFilters"></include>
+                   <include name="tearDown"></include>
+               </methods>
+            </class>
+
+            <class name="Coupons_Projects">
+                <methods>
+                    <include name="setUp"></include>
+                    <include name="testSelectStoreByZipCode"></include>
+                    <include name="testClickPrintCouponInPopupTab"></include>
+                    <include name="testClickRainbowSprinkleCake"></include>
+                    <include name="testDownloadRainbowCakeInstructions"></include>
+                    <include name="testClickRainbowSprinkleCakeProject"></include>
+                    <include name="testIncreaseMaterialQuantitiesToTwo"></include>
+                    <include name="testClickWhimsicalFairyCloche"></include>
+                    <include name="testHoverAndShareViaFacebook"></include>
+                    <include name="tearDown"></include>
+                </methods>
+            </class>
+            <class name="Custom_Framing">
+                <methods>
+                    <include name="clicking_booking_appointment_button_test1"></include>
+                    <include name="making_an_apointment_test2"></include>
+                    <include name="making_an_apointment_test2"></include>
+                    <include name="making_jersy_test4"></include>
+                    <include name="add_cart_test5"></include>
+                </methods>
+            </class>
+            <class name="HomePage">
+                <methods>
+                    <include name="scrolling"></include>
+                    <include name="imageBar"></include>
+                    <include name="sideScroll"></include>
+                    <include name="viewButtons"></include>
+                    <include name="navProducts"></include>
+                </methods>
+            </class>
+            <class name="Kids_Section">
+                <methods>
+                    <include name="selecting_item_from_kids_deal_test1"></include>
+                    <include name="Kids_section_foward_backwards_arrows_test2"></include>
+                    <include name="Shop_by_age_test3"></include>
+                    <include name="Shop_Now_Function_test4"></include>
+                    <include name="checkbox_test5"></include>
+                </methods>
+            </class>
+            <class name="Maker_Place">
+                <methods>
+                 <include name="videoPlayer"></include>
+                 <include name="addCart"></include>
+                 <include name="addWishlist"></include>
+                 <include name="businessLinks"></include>
+                 <include name="shopFilter"></include>
+                </methods>
+            </class>
+            <class name="Party_and_Balloons">
+                <methods>
+                    <include name="Party_and_Balloons_Page_sales_slider_test1"></include>
+                    <include name="sorting_by_best_sellers_test2"></include>
+                    <include name="picking_customizing_balloon_test3"></include>
+                    <include name="filtering_balloons_by_charaters_Test4"></include>
+                    <include name="enable_accessibility_Test5"></include>
+                </methods>
+            </class>
+            <class name="Search_Functionality">
+                <methods>
+                    <include name="paintSearch"></include>
+                    <include name="noResults"></include>
+                    <include name="searchPreview"></include>
+                    <include name="clearSearch"></include>
+                    <include name="searchHistory"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

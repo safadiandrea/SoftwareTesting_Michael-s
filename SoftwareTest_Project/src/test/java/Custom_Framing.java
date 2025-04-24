@@ -6,11 +6,7 @@ import org.testng.annotations.Test;
 public class Custom_Framing {
     @Test
     public static void clicking_booking_appointment_button_test1() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
-
-
         driver2.get("https://www.michaels.com/?cm_mmc=SearchBrand-_-google-_-MICH_Search_US_N_Brand_TrademarkCore_Branded_Exact-_-Trademark+-+Branded+Core+Term&kenshoo_ida=tm_brand&kpid=go_cmp-324266651_adg-24658685771_ad-348913281960_kwd-92295400_dev-c_ext-_prd-&gad_source=1&gbraid=0AAAAADkMxxeaUir8o5Xa3ucAVT8iwwmcI&gclid=Cj0KCQjwh_i_BhCzARIsANimeoG2ECLMLeKu1hj9PItBYaBWKVa9-KhX9uTAIzeY1w1JrFHgSLhXXG8aAq7HEALw_wcB");
         driver2.manage().window().maximize();
         Thread.sleep(1000);
@@ -95,8 +91,6 @@ public class Custom_Framing {
 
     @Test
     public static void learnmore_test3() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         Thread.sleep(2000);
         driver2.get("https://www.michaelscustomframing.com/");
@@ -116,8 +110,6 @@ public class Custom_Framing {
 
     public static void making_jersy_test4() throws InterruptedException {//Two methods in one
         //Making a jersey
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.get("https://www.michaelscustomframing.com/");
         driver2.manage().window().maximize();
