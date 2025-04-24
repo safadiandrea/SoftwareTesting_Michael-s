@@ -9,8 +9,6 @@ import org.testng.annotations.Test;
 public class Party_and_Balloons {
     @Test
     public static void Party_and_Balloons_Page_sales_slider_test1() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.manage().window().maximize();
 
@@ -35,8 +33,6 @@ public class Party_and_Balloons {
     }
     @Test
     public static void sorting_by_best_sellers_test2() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.manage().window().maximize();
         JavascriptExecutor scroll = (JavascriptExecutor) driver2;
@@ -52,8 +48,6 @@ public class Party_and_Balloons {
     }
     @Test
     public static void picking_customizing_balloon_test3() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.manage().window().maximize();
 
@@ -80,8 +74,6 @@ public class Party_and_Balloons {
 
     @Test
     public static void filtering_balloons_by_charaters_Test4() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.get("https://www.michaels.com/shop/party");
         driver2.manage().window().maximize();
@@ -98,8 +90,6 @@ public class Party_and_Balloons {
     }
     @Test
     public static void enable_accessibility_Test5() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.manage().window().maximize();
 

@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 public class Kids_Section {
     @Test
     public static void selecting_item_from_kids_deal_test1() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",
-                "C://Users//isaia//drivers//chromedriver.exe");
         WebDriver driver2 = new ChromeDriver();
         driver2.manage().window().maximize();
 

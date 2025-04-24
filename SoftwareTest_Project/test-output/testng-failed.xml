@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/safad/IdeaProjects/SoftwareTest_Project(failed)">
+    <classes>
+      <class name="Party_and_Balloons">
+        <methods>
+          <include name="filtering_balloons_by_charaters_Test4"/>
+          <include name="picking_customizing_balloon_test3"/>
+          <include name="sorting_by_best_sellers_test2"/>
+        </methods>
+      </class> <!-- Party_and_Balloons -->
+      <class name="HomePage">
+        <methods>
+          <include name="sideScroll"/>
+          <include name="navProducts"/>
+        </methods>
+      </class> <!-- HomePage -->
+      <class name="Classes_Events">
+        <methods>
+          <include name="testOpenCalendarAndSelectIntermediateSkill"/>
+          <include name="testClickArtExperiencesAndClearFilters"/>
+          <include name="setUp"/>
+          <include name="testClickShareIcon"/>
+          <include name="testSearchForOnlineClassYarnAndSelect"/>
+          <include name="testNavigateToClassesEvents"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Classes_Events -->
+      <class name="Coupons_Projects">
+        <methods>
+          <include name="testClickWhimsicalFairyCloche"/>
+          <include name="testClickRainbowSprinkleCakeProject"/>
+          <include name="testDownloadRainbowCakeInstructions"/>
+          <include name="setUp"/>
+          <include name="testClickRainbowSprinkleCake"/>
+          <include name="testHoverAndShareViaFacebook"/>
+          <include name="testIncreaseMaterialQuantitiesToTwo"/>
+          <include name="testClickPrintCouponInPopupTab"/>
+          <include name="testSelectStoreByZipCode"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Coupons_Projects -->
+      <class name="Kids_Section">
+        <methods>
+          <include name="selecting_item_from_kids_deal_test1"/>
+          <include name="checkbox_test5"/>
+          <include name="Kids_section_foward_backwards_arrows_test2"/>
+          <include name="Shop_by_age_test3"/>
+        </methods>
+      </class> <!-- Kids_Section -->
+      <class name="Maker_Place">
+        <methods>
+          <include name="addWishlist"/>
+          <include name="addCart"/>
+          <include name="shopFilter"/>
+        </methods>
+      </class> <!-- Maker_Place -->
+    </classes>
+  </test> <!-- C:/Users/safad/IdeaProjects/SoftwareTest_Project(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
